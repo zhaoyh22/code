@@ -1,2 +1,4 @@
 # code
 Pseudo-relative humidity retrieval 
+
+This is a pseudo–relative humidity (pseudo-RH) construction module designed for radar-indirect data assimilation to suppress spurious convection. It constructs pseudo-RH observations by combining (i) Bayesian retrieval in echo-consistent regions and (ii) an environmental neighborhood estimation in spurious convection regions (SCRs) identified by strong background echoes collocated with null/missing radar returns. In addition, for strong observed echoes, an empirical saturation adjustment is applied above the lifting condensation level (LCL), following the cloud-analysis practice in the WRF 3DVar indirect radar assimilation framework (e.g., Wang et al., 2013). The resulting pseudo-RH field is quality controlled and then converted into pseudo water-vapor observations for assimilation.
